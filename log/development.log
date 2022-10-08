@@ -1,0 +1,363 @@
+Started GET "/" for ::1 at 2022-10-08 09:40:38 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/tsushimakatsu/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/gems/railties-6.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/tsushimakatsu/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/gems/railties-6.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.4ms | Allocations: 406)
+Completed 200 OK in 18ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5073)
+
+
+Started GET "/" for ::1 at 2022-10-08 09:42:53 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'hello' could not be found for ApplicationController):
+  
+actionpack (6.0.6) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (6.0.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (6.0.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-10-08 09:43:06 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 2196)
+
+
+  
+ActionController::MissingExactTemplate (ApplicationController#hello is missing a template for request formats: text/html):
+  
+actionpack (6.0.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.6) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+actiontext (6.0.6) lib/action_text/rendering.rb:19:in `with_renderer'
+actiontext (6.0.6) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.0.6) lib/active_support/callbacks.rb:121:in `instance_exec'
+activesupport (6.0.6) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.6) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (6.0.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (6.0.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-10-08 09:43:16 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 640)
+
+
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:44:19 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.3ms | Allocations: 191)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 447ms (ActiveRecord: 0.0ms | Allocations: 21629)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/tsushimakatsu/Desktop/source/rails_diary/diary/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:45:42 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.4ms | Allocations: 191)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 458ms (ActiveRecord: 0.0ms | Allocations: 10590)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/tsushimakatsu/Desktop/source/rails_diary/diary/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:45:45 +0900
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms | Allocations: 5481)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/tsushimakatsu/Desktop/source/rails_diary/diary/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:46:42 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.3ms | Allocations: 191)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 0.0ms | Allocations: 10406)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/tsushimakatsu/Desktop/source/rails_diary/diary/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:46:44 +0900
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 416ms (ActiveRecord: 0.0ms | Allocations: 5481)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/tsushimakatsu/Desktop/source/rails_diary/diary/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:54:15 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 8500)
+
+
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:55:18 +0900
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.2ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4945)
+
+
+Started GET "/diary_pages/input" for ::1 at 2022-10-08 09:55:59 +0900
+Processing by DiaryPagesController#input as HTML
+  Rendering diary_pages/input.html.erb within layouts/application
+  Rendered diary_pages/input.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 11700)
+
+
