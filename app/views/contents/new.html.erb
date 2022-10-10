@@ -1,0 +1,6 @@
+<h1>一言日記</h1>
+<%= form_with(model: @content, local: true) do |f| %>
+  <%= f.label :きょうのひとこと %>
+  <%= f.text_field :content, class: 'form-control' %>
+  <%= f.submit "書く", class: "btn btn-primary" %>
+<% end %>

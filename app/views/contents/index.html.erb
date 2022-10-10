@@ -1,0 +1,13 @@
+<body>
+    <div class="boxmi4">
+        <% @contents.each do |content| %>
+            <%= content.date.strftime("%m/%d") %>
+            :
+            <%= content.content %>
+            <%= link_to edit_content_path(content.id) do %>
+                <button class="btn btn-edit" >書きなおす</button>    
+            <%end%>
+            <br>
+        <% end %>
+    </div>
+</body>

@@ -1,0 +1,90 @@
+// Place all the styles related to the Contents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$green: #84AD47;
+$red: #AD4747;
+$blue: #4784AD;
+
+h1 {
+    text-align: center;
+    color: #ac89ee;
+    border-bottom: solid 3px #89a1ee;
+  }
+
+
+form {
+  width: 80%;
+  margin: 10% auto;
+  min-width: 9rem;
+}
+  
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+  
+  &[type=submit] {
+    background: $green;
+    color: #fff;
+    width: auto;
+    float: right;
+  }
+
+  &::placeholder {
+    color: darken(#f9f9f9, 50%);
+  }
+
+  &.error {
+    background: $red;
+    color: #fff;
+    &::placeholder {
+      color: darken($red, 60%);
+    }
+  }
+}
+textarea {
+  height: 10rem;
+}
+
+
+// Generic Styles ;)
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+body {
+  background: #f9f9f9;
+  color: #2f2f2f;
+  font-family: 'Open Sans';
+}
+
+.boxmi4{
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 50%, #fff 0%, #fff 100%), linear-gradient(180deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 95%, #89a1ee 100%);
+    background-size: 8px 100%,100% 2em;
+    line-height: 2;
+    border: solid 2px #ac89ee;
+    padding: 2em 1em 1.98em 1em;
+    color: #89a1ee;
+    margin: 2em 0;
+    font-weight: bold;
+  }
+
+
+.btn-edit-delete:active{
+    color : #26a69a;
+}
