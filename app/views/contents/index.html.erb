@@ -1,12 +1,16 @@
 <body>
-    <div class="boxmi4">
+    <div class="contents">
+        <% Time.current.all_month do |day| %>
+            <%= day %>
+        <% end %>
+
+
         <% @contents.each do |content| %>
             <%= content.date.strftime("%m/%d") %>
             :
             <%= content.content %>
-            <%= link_to edit_content_path(content.id) do %>
-                <button class="btn btn-edit" >書きなおす</button>    
-            <%end%>
+            <%= link_to "書きなおす", edit_content_path(content.id), class: "btn btn-edit btn-radius"%>
+            <%= link_to "消す", content, method: :delete, data: {confirm: "You sure?"}, class: "btn btn-edit btn-radius"%>
             <br>
         <% end %>
     </div>
