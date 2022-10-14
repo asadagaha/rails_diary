@@ -23,7 +23,7 @@ class ContentsController < ApplicationController
     end
   end
   def update(date)
-    @content = Content.where(date: now.in_time_zone.all_day)[0]
+    @content = Content.where(date: date.in_time_zone.all_day)[0]
     @content.update(content_params)
     redirect_to action: "index"      
   end
